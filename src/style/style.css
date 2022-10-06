@@ -94,3 +94,23 @@ section {
   width: 100%;
   position: relative;
 }
+
+@media screen and (max-width: 600px) {
+  #details {
+    display: flex;
+    flex-direction: column;
+  }
+  #details > * {
+    order: 3;
+  }
+  #details > h2 {
+    order: 1;
+  }
+  #details > img {
+    order: 2;
+    width: 100%;
+    margin: 0;
+    padding: 1vw 0 0 0;
+    position: relative;
+  }
+}
