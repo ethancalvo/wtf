@@ -96,6 +96,9 @@ section {
 }
 
 @media screen and (max-width: 600px) {
+  #wtf > div {
+    transform: translate3d(clamp(48px, 15vw, 200px), -10vw, 0);
+  }
   #details {
     display: flex;
     flex-direction: column;
