@@ -19,6 +19,6 @@ In order to edit the text, go to the [mainPage.yml](/src/_data/mainPage.yml) fil
 
 ## After editing
 
-Once you've made the edits, hit the commit button.
+Once you've made the edits, scroll to the bottom of the editing page, and hit the commit button (maybe let me know breifly what you changed in the comments).
 
 After you're done editing, let me know. I can kick off the build process. If you want to kick it off yourself, I can probably hook it up to netlify to have netlify automatically build when changes are committed to this repo.
