@@ -14,7 +14,7 @@ sections:
     image: old-lady-small.jpg
     paragraphs:
       - Let's get together October 22, 2022 starting at 6:30pm, to congratulate one tough lady on surviving half a century.
-      - Check your evite for location
+      - Check your evite for location.
 
   - id: parking
     heading: Parking
