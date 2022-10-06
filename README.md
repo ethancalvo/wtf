@@ -21,4 +21,8 @@ In order to edit the text, go to the [mainPage.yml](/src/_data/mainPage.yml) fil
 
 Once you've made the edits, scroll to the bottom of the editing page, and hit the commit button (maybe let me know breifly what you changed in the comments).
 
-After you're done editing, let me know. I can kick off the build process. If you want to kick it off yourself, I can probably hook it up to netlify to have netlify automatically build when changes are committed to this repo.
+After you're done editing, if all is good, Netlify will start re-building the site. It's pretty light-weight, so you should see updates within a few seconds... at most a few minutes. The badge below should give an indication of whether the site finished building properly or is still in the middle of building (You may need to refresh the page a few times).
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7a1dfeb8-2b02-448e-994e-2c4496774af4/deploy-status)](https://app.netlify.com/sites/moonlit-sunshine-243e0d/deploys)
+
+
