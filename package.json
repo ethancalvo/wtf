@@ -1,0 +1,20 @@
+{
+  "name": "wtf",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --files src --server src --open \"Microsoft Edge\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ethancalvo/wtf.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ethancalvo/wtf/issues"
+  },
+  "homepage": "https://github.com/ethancalvo/wtf#readme"
+}
