@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WTF | Who's Turning Fifty?</title>
+    <title>{{mainPage.browserTabTitle}}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!--link
@@ -27,27 +27,19 @@
   </head>
   <body>
     <section id="wtf">
-      <h1>WTF</h1>
-      <div>Who's</div>
-      <div>Turning</div>
-      <div>Fifty?</div>
+      <h1>{{mainPage.titleSection.backgroundText}}</h1>
+      {%- for word in mainPage.titleSection.foregroundWords -%}
+      <div>{{word}}</div>
+      {%- endfor -%}
     </section>
-    <section id="details">
-      <h2>Denise Otteson, that's who</h2>
-      <p>
-        Let's get together October 22, 2022 starting at 6:30pm, to congratulate
-        one tough lady on surviving half a century.
-      </p>
-      <p>Check your evite for location.</p>
-      <img src="/old-lady-small.jpg" />
+    {%- for section in mainPage.sections -%}
+    <section id="{{section.id}}">
+      <h2>{{section.heading}}</h2>
+      {%- for para in section.paragraphs -%}
+        <p>{{para}}</p>
+      {%- endfor -%}
+      <img src="/{{section.image}}" />
     </section>
-    <section id="parking">
-      <h2>Parking</h2>
-      <img src="/map.jpg" />
-      <p>
-        Parking will be available in 2 locations. Neighbors have given the nod
-        to walk through their yards, because Denise stared them down.
-      </p>
-    </section>
+    {%- endfor -%}
   </body>
 </html>

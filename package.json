@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "browser-sync start --files src --server src --open \"Microsoft Edge\""
+    "build": "npm run killCash; eleventy",
+    "killCash": "rm -rf public/*",
+    "deploy-draft": "npm run build; netlify deploy --dir public",
+    "deploy": "npm run build; netlify deploy --dir public --prod",
+    "start": "browser-sync start --files public --server public --open \"Microsoft Edge\""
   },
   "repository": {
     "type": "git",
@@ -16,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/ethancalvo/wtf/issues"
   },
-  "homepage": "https://github.com/ethancalvo/wtf#readme"
+  "homepage": "https://github.com/ethancalvo/wtf#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2",
+    "js-yaml": "^4.1.0"
+  }
 }

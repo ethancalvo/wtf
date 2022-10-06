@@ -1,0 +1,24 @@
+browserTabTitle: "WTF | Who's Turning Fifty?"
+
+titleSection:
+  id: wtf
+  backgroundText: WTF
+  foregroundWords:
+    - Who's
+    - Turning
+    - Fifty?
+
+sections:
+  - id: details
+    heading: Denise Otteson, that's who
+    image: old-lady-small.jpg
+    paragraphs:
+      - Let's get together October 22, 2022 starting at 6:30pm, to congratulate one tough lady on surviving half a century.
+      - Check your evite for location
+
+  - id: parking
+    heading: Parking
+    image: map.jpg
+    paragraphs:
+      - Parking will be available in 2 locations. Neighbors have given the nod
+        to walk through their yards, because Denise stared them down.
